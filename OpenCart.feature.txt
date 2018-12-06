@@ -1,0 +1,204 @@
+#Author:Sandhya gadi
+@OpenCartResources
+
+
+Feature:OpenCart_Components_Monitors
+
+
+
+
+Scenario:check heading of home page
+And Components tab on home page
+Description:Check whether there is component tag or not
+Given User should be on home page
+When user places mouse on components
+Then related items should be displayes
+
+
+Scenario:Check Monitors sub tab of Components tab
+Description:when user click on Monitors user has to navigate to corresponding 
+monitors tab
+Given User has to be on home page
+When user clicks on Monitors
+Then user has to navigate to  Monitors refine search page
+
+
+
+Scenario:Check Monitors the heading of Monitors Refine Search page
+Description:when user navigate to Monitors page
+Given User has to be on the Monitors Refine Search page
+Then check the heading of the Monitor refine search page
+
+
+
+Scenario:Check Desktop tab
+Description:when user click on Desktop user has to navigate to corresponding 
+Desktop page
+Given User has to be on Desktop page
+When user clicks on Desktop
+Then user has to navigate to  Desktop page
+
+
+Scenario:Check image of desktop
+Description:User has to display with desktop image
+Given User has to be on the Monitors Refine Search page
+Then check the image of desktop
+
+
+
+Scenario:Check PC tab
+Description:when user click on PC user has to navigate to corresponding 
+PC page
+Given User has to be on PC page
+When user clicks on PC
+Then user has to navigate to  PC page
+But User has to displayed with no products list available message
+
+
+Scenario:Check PC tab continue button
+Description:when user click on PC continue button user has to navigate to home page
+Given User has to be on PC page
+When user clicks on PC continue button
+Then user has to navigate to  Home page
+
+
+
+Scenario:Check Mac tab
+Description:when user click on Mac user has to navigate to corresponding 
+PC page
+Given User has to be on Mac page
+When user clicks on Mac
+Then user has to navigate to  Mac page
+
+
+
+Scenario:Check Mac list icon
+Description:when user click on Mac list icon products have to displayed in list manner
+Given User has to be on Mac page
+When user clicks on Mac list icon
+Then user has to displayed with list of available products
+
+
+Scenario:Check Mac grid icon
+Description:when user click on Mac grid icon products have to displayed in grid manner
+Given User has to be on Mac page
+When user clicks on Mac grid icon
+Then user has to displayed with  available products in a grid view
+
+
+
+Scenario:Check With product compare link
+Description:when user click on  product compare link the next page has to be displayed
+Given User has to be on Mac page
+When user clicks on Product compare link
+Then user has to navigate to produce comparision page
+
+
+
+Scenario:Check With product compare page
+Description:when user click on  product compare continue button the home page has to be displayed
+Given User has to be on Mac page
+BUt no products are choosen to compare message has to be displayed
+When user clicks on Product compare continue
+Then user has to navigate to home page
+
+
+Scenario:Check With list icon of monitors page
+Description:when user click on list icon of monitors page items to be displayed in a list manner
+Given User has to be on Monitors page
+When user clicks on list icon of monitors page
+Then user has to displayed with list of products
+
+
+
+
+Scenario:Check With grid icon of monitors page
+Description:when user click on grid icon of monitors page items to be displayed in a grid view
+Given User has to be on Monitors page
+When user clicks on grid icon of monitors page
+Then user has to displayed with   products in a grid manner
+
+
+Scenario:Check With sort by drop down list in monitors page
+Description:when user click on sort by drop down  of monitors page different categories has to be displayed
+Given User has to be on Monitors page
+When user clicks on grid icon of monitors page
+Then user will be listed with different types of categories
+
+
+
+Scenario:Check With show drop down list in monitors page
+Description:when user click on shown drop down  of monitors page different categories has to be displayed
+Given User has to be on Monitors page
+When user clicks on grid icon of monitors page
+Then user will be listed with different types of categories
+
+
+
+
+Scenario:Check With cart icon in monitors page
+Description:when user click on cart icon of monitors page 
+it has to navigate to the next page
+Given User has to be on Monitors page
+When user clicks on cart icon of monitors page
+Then user has to navigate to the product features page
+
+
+
+Scenario:Check With Description tab of product feature page
+Description:when user click on Desription tag of Product feature page 
+it has to display description of the product
+Given User has to be on product feature page
+When user clicks on Description tab
+Then user has to display description to the product features page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

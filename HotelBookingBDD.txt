@@ -1,0 +1,112 @@
+@HotelBookingLogin
+
+Feature:Login
+
+
+Scenario:check the heading of the login page
+Given User is on login page.
+Then check the heading of the page
+
+
+
+Scenario:Successful login with valid data
+Descripton: to login,user needs to enter his valid username,password
+Given User is on login page
+Then navigate to hotelBooking
+
+
+Scenario:Prompt user to enter the data when the login field is empty
+Given USer is on login page
+When user doesnot enter either username or password
+And clicks the Login Button
+Then display appropriate message
+
+
+
+Scenario:Unsuccessful login due to incorrect user creditionals
+Given user is on login page
+When user enters incorrect username or passsword
+Then display login failed message
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+@HotelBookingSignup
+
+Feature:Signup
+
+
+Scenario:check the heading of the signup page
+Given User is on signup page.
+Then check the heading of the page
+
+Scenario:User need to enter the valid details for signup
+Description:to signup,user need to enter the firstname,lastname,email id,mobile no.,address
+Given User is on signup page
+Then navigate to the password generation page
+
+
+Scenario:Prompt user to that firstname And lastname should not be empty
+Given User is on signup page
+When user leaves firstname 
+And lastname as blank
+And clicks the button
+Then display firstname And second name should not be empty
+
+Scenario:Prompt  user  to enter a valid email id And should not be empty
+Given user is on signup page
+When user enters all the data
+But user enters the incorrect email format and clicks the button
+Then display email id should not be empty and enter valid email id
+
+Scenario:Prompt user to enter valid mobile number And should not leave as blank
+Give user is on signup page
+When user enter invalid mobile number and leave as blank
+|0000000000|
+|0132348557|
+|6586347|
+|9548353453535553|
+||
+Then display alert message
+
+
+Scenario:Prompt user that city field is mandatory
+Give user is on signup page
+When user does not select any city 
+And clicks the button
+Then display that user need to select city name
+
+
+Scenario:Prompt user that state field  is mandatory
+Give user is on signup page
+When user does not select any state 
+And clicks the button
+Then display alert message 
+
+
+Scenario:Prompt the user to enter a strong password
+Description:password should contain numbers,characters and special characters
+Given reenter the password and click on confirm password
+When user doesnot enter either username or password
+Then display password generated has been successfully and navigate to the login page
+
+
+Scenario:Successful login with valid data
+Descripton: to login,user needs to enter his valid username,password
+Given User is on login page
+
+
+
+Scenario:Prompt user to enter the data when the login field is empty
+Given USer is on login page
+When user doesnot enter either username or password
+And clicks the Login Button
+Then display appropriate message
+
+
+Scenario:Unsuccessful login due to incorrect user creditionals
+Given user is on login page
+When user enters incorrect username or passsword
+Then display login failed message
+
+
